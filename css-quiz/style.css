@@ -1,7 +1,40 @@
-h1.heading {
+/* h1.heading {
   color: red;
 }
 
 .wrapper .heading {
   color: blue;
+} */
+
+section .heading {
+  color: red;
 }
+
+h1 .heading {
+  color: blue;
+}
+
+
+
+.teaser {
+  background-color: red;
+  border-radius: 4px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.teaser.special {
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.teaser.special.more-special {
+  background-color: blue;
+}
+
+
+.hero .teaser {
+  background-color: orange;
+}
+
