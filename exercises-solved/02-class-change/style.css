@@ -1,0 +1,15 @@
+* {
+  font-family: sans-serif;
+}
+
+.box {
+  margin: 30vh auto 0;
+  background-color: rgb(8, 0, 255);
+  width: 70%;
+  color: #fff;
+  padding: 3em;
+}
+
+.red {
+  background-color: red;
+}

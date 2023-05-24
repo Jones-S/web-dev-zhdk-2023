@@ -1,0 +1,69 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  /* reset styling */
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* new styling */
+.button {
+  color: white;
+  border-radius: 50%;
+  background-color: red;
+  height: 180px;
+  width: 180px;
+  cursor: pointer;
+  transition: background-color linear 0.3s, transform linear 0.15s;
+}
+
+.button:hover {
+  background-color: rgb(228, 85, 85);
+  transform: scale(1.1);
+}
+
+.emojibox {
+  margin: 140px auto;
+  font-size: 30px;
+}

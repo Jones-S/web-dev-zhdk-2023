@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 /* h1.heading {
   color: red;
 }
@@ -16,6 +21,7 @@ h1 .heading {
 
 
 
+
 .teaser {
   background-color: red;
   border-radius: 4px;
@@ -31,6 +37,8 @@ h1 .heading {
 
 .teaser.special.more-special {
   background-color: blue;
+  padding: 10px;
+  padding-right: 20px;
 }
 
 
