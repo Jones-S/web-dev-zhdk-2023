@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chose your pizza ingredients</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="./scripts/script.js" defer></script>
+</head>
+
+<body>
+  <div class="ingredients-wrapper">
+
+    <ul class="ingredients" data-js="ingredients-wrapper">
+      <!-- In here I will generate a few ingredients via javascript -->
+    </ul>
+
+    <button class="btn" data-js="calculate-price-button">Calculate total price</button>
+
+    <div class="your-pizza">
+      <p class="pizza-description">
+        You ordered a pizza containing:
+      </p>
+
+      <ul class="final-ingredients" data-js="final-ingredients">
+      </ul>
+
+      <p class="total-price">
+        This will cost you: <span class="price-amount" data-js="price-amount"></span>.
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
