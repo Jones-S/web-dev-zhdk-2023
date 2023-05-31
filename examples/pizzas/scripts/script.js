@@ -4,6 +4,12 @@ const ingredients = [
     name: "Mozzarella di Buffala",
     id: "mozzarella",
     price: "4.00",
+    color: "#000",
+  },
+  {
+    name: "Pepperoni",
+    id: "pepperoni",
+    price: "2.00",
   },
   {
     name: "Salami",
@@ -29,6 +35,7 @@ const ingredients = [
     name: "Cherry Tomatoes",
     id: "cherry-tomatoes",
     price: "1.50",
+    color: "#EFEFEF",
   },
 ];
 
@@ -42,6 +49,8 @@ function displayIngredients(ingredients) {
 
     // add data-attribute for selecting via js
     item.dataset.js = "ingredient";
+
+    item.style.backgroundColor = ingredients[i].color;
 
     item.innerHTML = populateTemplate(ingredients[i]);
     wrapper.appendChild(item);

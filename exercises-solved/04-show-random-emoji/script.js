@@ -8,12 +8,13 @@ const emojis = ["🐓", "🐈‍⬛", "🍊", "🥑", "👹", "🫀", "🦆", "�
 function displayEmoji() {
   console.log("click");
 
-  // Math.floor(4.5) = rounding to lower number (int)
   // Math.random() = returns random "number" between 0 and 1
   // emojis.length = length of array
   const randomFloat = Math.random();
   console.log("randomFloat: ", randomFloat);
   const decimalIndex = randomFloat * emojis.length;
+
+  // Math.floor() = rounding to lower number (int)
   const randomNumber = Math.floor(decimalIndex);
   const item = emojis[randomNumber];
   console.log("item: ", item);
